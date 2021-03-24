@@ -6,8 +6,15 @@
 
 div.slider-container {
   display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+div.slider {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -20,4 +27,17 @@ div.controls i {
 img {
   width: 500px;
   height: 500px;
+}
+
+div.dot-container {
+  margin: 10px;
+}
+
+div.dot-container i {
+  padding-right: 10px;
+  color: #DEDEDE;
+}
+
+div.dot-container i.active {
+  color: #000;
 }

@@ -26,6 +26,9 @@ var app = new Vue(
           this.index--
         }
       },
+      dotSelection: function(index) {
+        this.index = index;
+      }
     }
   }
 );

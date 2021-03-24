@@ -11,17 +11,27 @@
 <body>
   <div id="root">
     <div class="slider-container">
-      <div class="controls" >
-        <i class="fas fa-chevron-left" @click="prev"></i>
+      <div class="slider">
+        <div class="controls" >
+          <i class="fas fa-chevron-left" @click="prev"></i>
+        </div>
+        <div class="slider-images">
+          <img :src="images[index]" alt="">
+        </div>
+        <div class="controls">
+          <i class="fas fa-chevron-right" @click="next"></i>
+        </div>
       </div>
-      <div class="slider-images">
-        <img :src="images[index]" alt="">
-      </div>
-      <div class="controls">
-        <i class="fas fa-chevron-right" @click="next"></i>
+      <div class="dot-container">
+        <i
+        class="fas fa-circle"
+        v-for="dot in images.length"
+        :class="(dot - 1 == index) ? 'active' : '' "
+        @click="dotSelection(dot - 1)"
+        >   </i>
       </div>
     </div>
-  </div>
+    </div>
 
 
 

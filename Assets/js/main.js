@@ -10,6 +10,7 @@ var app = new Vue(
         "../vue-slider/Assets/img/panorama5.jfif",
       ],
       index: 0,
+      timer: null,
     },
     methods: {
       next: function () {
@@ -28,7 +29,14 @@ var app = new Vue(
       },
       dotSelection: function(index) {
         this.index = index;
-      }
+      },
+      startRotation: function() {
+        this.timer = setInterval(this.next, 3000);
+      },
+      stopRotation: function() {
+        clearTimeout(this.timer);
+        this.timer = null;
+      },
     }
   }
 );

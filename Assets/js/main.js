@@ -3,11 +3,11 @@ var app = new Vue(
     el: "#root",
     data: {
       images: [
-        "../vue-slider/Assets/img/panorama1.jfif",
-        "../vue-slider/Assets/img/panorama2.jfif",
-        "../vue-slider/Assets/img/panorama3.jfif",
-        "../vue-slider/Assets/img/panorama4.jfif",
-        "../vue-slider/Assets/img/panorama5.jfif",
+        "../vue-slider/Assets/img/panorama1.png",
+        "../vue-slider/Assets/img/panorama2.png",
+        "../vue-slider/Assets/img/panorama3.png",
+        "../vue-slider/Assets/img/panorama4.png",
+        "../vue-slider/Assets/img/panorama5.png",
       ],
       index: 0,
       timer: "",

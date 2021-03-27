@@ -3,11 +3,11 @@ var app = new Vue(
     el: "#root",
     data: {
       images: [
-        "../vue-slider/Assets/img/panorama1.png",
-        "../vue-slider/Assets/img/panorama2.png",
-        "../vue-slider/Assets/img/panorama3.png",
-        "../vue-slider/Assets/img/panorama4.png",
-        "../vue-slider/Assets/img/panorama5.png",
+        "https://dxxbxu0f802py.cloudfront.net/wp-content/uploads/2016/07/30062143/CuronVenosta_TrentinoAltoAdige-1.png",
+        "https://dxxbxu0f802py.cloudfront.net/wp-content/uploads/2016/07/30062141/RaddaInChianti_Toscana-1.png",
+        "https://dxxbxu0f802py.cloudfront.net/wp-content/uploads/2016/07/30062141/CastelluccioDiNorcia_Umbria-1.png",
+        "https://dxxbxu0f802py.cloudfront.net/wp-content/uploads/2016/07/30062141/Asolo_Treviso-1.png",
+        "https://dxxbxu0f802py.cloudfront.net/wp-content/uploads/2016/07/30062140/Sperlonga_Lazio-1.png",
       ],
       index: 0,
       timer: "",
